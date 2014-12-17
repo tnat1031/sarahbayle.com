@@ -7,52 +7,155 @@
     <!-- <link rel="stylesheet" href="css/qviz.css"> -->
     <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- google fonts  -->
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      .icon {
+        /*height: 30px;*/
+        width: 30px;
+      }
+      .cursive {
+        font-family: 'Dancing Script', cursive;
+      }
+    </style>
   </head>
   
   <body>
 
-  <diva class="row">
+  <!-- begin row for all content -->
+  <div class="row">
+    <!-- begin column for all content -->
     <div class="col-xs-10 col-xs-offset-1">
 
-      <div class="col-xs-12">
-        <a href="http://www.linkedin.com/in/sarahbayle" target="_blank"><img class="img-responsive pull-right" src="img/linkedin_button.png" style="height: 30px"></img></a>
+      <!-- linkedin and other buttons -->
+      <div class="row">
+        <div style="height: 10px"></div>
+        <div class="col-xs-12">
+          <a href="mailto:sbayle@gmail.com" target="_blank"><img class="img-responsive pull-right icon" src="img/gmail-logo.jpg"></img></a>
+          <a href="http://www.linkedin.com/in/sarahbayle" target="_blank"><img class="img-responsive pull-right icon" src="img/linkedin_button.png"></img></a>
+        </div>
       </div>
 
+      <!-- head shot and about me paragraph -->
       <div class="row">
+        
         <div class="col-md-3 col-xs-12">
-          <h1 style="text-align: center">Sarah Bayle</h1>
-          <img class="img-responsive" src="img/headshot.jpg" style="width: 50%; max-width: 200px; min-width: 100px; margin-left: auto; margin-right: auto; border-radius: 9px"></img>
+          <h1 style="text-align: center" class="cursive">Sarah Bayle</h1>
+          <img class="img-responsive" src="img/Sarah_Bayle_pic.jpg" style="width: 50%; max-width: 200px; min-width: 100px; margin-left: auto; margin-right: auto; border-radius: 9px"></img>
         </div>
         
+        <!-- 'about me' paragraph -->
         <div class="col-md-9 col-xs-12">
-          <div style="height: 50px">
-          </div>
+          <div style="height: 50px"></div>
           <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
+      
       </div>
+      <!-- end headshot and about me  -->
 
       <hr>
-      
-
+          
+      <!-- begin tab buttons -->
       <div class="row">
         <ul class="nav nav-pills lead" style="text-align: center">
-          <li class="col-md-3 col-md-offset-1 col-xs-12 active" role="presentation"><a href="#">Writing</a></li>
-          <li class="col-md-3" role="presentation"><a href="#">Editing</a></li>
-          <li class="col-md-3" role="presentation"><a href="#">Project Management</a></li>
+          <li class="col-md-3 col-md-offset-1 col-xs-12 active" role="presentation"><a data-toggle="tab" href="#writing">Writing</a></li>
+          <li class="col-md-3 col-md-offset-1 col-xs-12" role="presentation"><a data-toggle="tab" href="#editing">Editing</a></li>
+          <li class="col-md-3 col-md-offset-1 col-xs-12" role="presentation"><a data-toggle="tab" href="#project-management">Project Management</a></li>
         </ul>
       </div>
+      <!-- end tab buttons -->
+
+      <div style="height: 50px"></div>
+
+      <!-- begin tab content -->
+      <div class="row">
+        <div class="tab-content col-xs-12">
+          <div class="tab-pane active" id="writing">
+
+            <!-- possible thumbnail + content template  -->
+            <!-- it's ok if img pulls right on large screen, but want it centered in small screen -->
+            <!-- <a class="col-xs-12 col-md-2 col-md-offset-1" href="#">
+              <img class="img-responsive thumbnail" style="max-height: 100px; margin: auto" src="img/ex1.jpg"></img>
+            </a>
+            <div class="col-xs-12 col-md-7">
+              <p>
+              <strong>Name of Book or Article: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div> -->
+            <!-- end thumbnail + content template  -->
+
+          </div>
+
+          <div class="tab-pane" id="editing">
+          </div>
+
+          <div class="tab-pane" id="project-management">
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end tab content -->
     
     </div>
+    <!-- end all content column  -->
   </div>
+  <!-- end all content row -->
 
 
+  <!-- simple template for displaying an article thumbnail and description -->
+  <textarea id="article-blurb-template" style="display: none">
     
-  </body>
-  
+    <% _.each(articles, function(article) { %>
+
+      <div class="row article-stub">
+        <a class="col-xs-12 col-md-2 col-md-offset-1" href="<%= article.url %>">
+          <img class="img-responsive thumbnail" style="max-height: 100px; margin: auto" src="img/<%= article.thumbnail_name %>"></img>
+        </a>
+        <div class="col-xs-12 col-md-7">
+          <p>
+          <strong><%= article.title %>: </strong>
+          <%= article.description %>
+          </p>
+        </div>
+      </div>
+      <div style="height: 20px"></div>
+
+    <% }) %>
+
+  </textarea >
+  <!-- end template  -->
+
+
   <script src="js/jquery-1.11.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/underscore-min.js"></script>
 
+  <script type="text/javascript">
+    // load json files and render against article-blurb-template
+    var Template = _.template($("#article-blurb-template").text());
+    var get_json = function(url, selector) {
+      $.ajax({
+        type: "GET",
+        url: url,
+        dataType: "json",
+        success: function(response) {
+          console.log(response);
+          var compiled = Template({"articles": response});
+          $(selector).append(compiled);
+        },
+        error: function(err) {
+          console.error(err);
+        }
+      })
+    }
+    get_json("json/writing.json", "#writing")
+    get_json("json/editing.json", "#editing")
+    get_json("json/project-management.json", "#project-management")
+  </script>
+    
+  </body>
   
 </html>
