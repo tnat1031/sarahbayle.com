@@ -1,37 +1,39 @@
 [
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex1.jpg"
+	{	
+		"company": "Toursphere",
+		"description": "I wrote several posts for Toursphere's blog, Points of Interest, specifically <a href=\"http://blog.toursphere.com/2013/10/07/app-spotlight-the-harriet-tubman-underground-railroad-byway\">App Spotlight<\/a> features and <a href=\"http://blog.toursphere.com/2013/11/06/5-reasons-to-build-an-app-for-your-event\">a marketing piece<\/a> on the benefits of building apps for events. Toursphere provides a wide range of mobile app development services to museums, tourist destinations, parks, hotels, universities, and publishers.",
+		"url": "http://blog.toursphere.com",
+		"thumbnail_name": "toursphere.png"
 	},
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex3.jpg"
+	{	
+		"company": "EBSCO",
+		"description": "I wrote multiple pieces for EBSCO's Business Book Summaries for Organizations program. This program provides concise yet comprehensive summaries of &quot;the best&quot; business books, including many from Harvard Business Review Press. Books I summarized include: <em>The End of Leadership<\/em>, <em>Lead Your Boss<\/em>, <em>Rice Wine with the Minister<\/em>, <em>The Reality-Based Rules of the Workplace<\/em>, <em>Worthless, Impossible, Stupid<\/em>, and <em>The Proactive Leader<\/em>.",
+		"url": "http://www.ebscohost.com/learning-resources/business-book-summaries",
+		"thumbnail_name": "ebsco.png"
 	},
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex10.jpg"
+	{	
+		"company": "ExerciseYourBeauty.com",
+		"description": "For the site's first incarnation in 2012, I wrote a series of articles about my experience participating in a 200-hour yoga teacher training. ExerciseYourBeauty.com (also known as XYB) was founded by Meg Hughes-Garvey, a fitness enthusiast and exercise physiologist. It was initially a collaborative endeavor with multiple writers promoting the mission statement of helping women rediscover their beauty. It has since become a personal blog showcasing Meg's workouts and information on life science.",
+		"url": "http://www.exerciseyourbeauty.com",
+		"thumbnail_name": "xyb.jpeg"
 	},
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex8.jpg"
+	{	
+		"company": "Dedication Yoga",
+		"description": "Dedication Yoga is a movement to combine writing and yoga, founded by author and yogi Sarah Wolf, who has published both novels and articles, and is also a certified yoga teacher. In 2012, I taught the initial DY classes with Sarah, as well as contributed articles to her blog, including &quot;how to&quot; articles such as &quot;Conquering the Dolphin Vinyasa&quot; and exploratory articles about initial attempts to combine yoga and writing into one experience, such as &quot;Experimenting with DY in Costa Rica.&quot;",
+		"url": "http://dedicationyoga.blogspot.com",
+		"thumbnail_name": "dedication-yoga.JPG"
 	},
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex4.jpg"
+	{	
+		"company": "Jones & Bartlett Learning",
+		"description": "For the highly profitable Public Safety Group, I wrote customizable Lecture Outlines and adaptable PowerPoint presentations for several chapters of the Instructor's Toolkit for <em>Fire Protection Systems, Second Edition<\/em>. I was hired for several other similar projects by this group.",
+		"url": "http://www.jblearning.com/catalog/9781284035377",
+		"thumbnail_name": "fire-protection-systems.jpg"
+	},
+	{	
+		"company": "My Personal Blog",
+		"description": "My personal blog about yoga, writing, and life!",
+		"url": "http://forwardfold.tumblr.com",
+		"thumbnail_name": "forward-fold.png"
 	}
+	
 ]

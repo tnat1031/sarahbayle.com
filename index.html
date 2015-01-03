@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sarah Bayle</title>
+    <title>Sarah Natoli</title>
     <!-- <link rel="stylesheet" href="css/qviz.css"> -->
     <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -40,15 +40,15 @@
       <div class="row">
         
         <div class="col-md-3 col-xs-12">
-          <h1 style="text-align: center" class="cursive">Sarah Bayle</h1>
-          <img class="img-responsive" src="img/headshot.jpg" style="width: 50%; max-width: 200px; min-width: 100px; margin-left: auto; margin-right: auto; border-radius: 9px"></img>
+          <h1 style="text-align: center" class="cursive">Sarah Natoli</h1>
+          <img class="img-responsive" src="img/Sarah_Bayle_pic.jpg" style="width: 50%; max-width: 200px; min-width: 100px; margin-left: auto; margin-right: auto; border-radius: 9px"></img>
         </div>
         
         <!-- 'about me' paragraph -->
         <div class="col-md-9 col-xs-12">
           <div style="height: 50px"></div>
           <p class="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Welcome to my online portfolio. All of my professional experience-in the nonprofit and legal sectors, running a freelance editorial business, and with leading educational publishers-is tied together by these three complementary threads of writing, editing, and project management. Success in all of these areas hinges on the ability to communicate clearly and concisely. Thus, you will find a representative sampling, rather than a comprehensive listing, of my recent work. Please contact me for more information.
           </p>
         </div>
       
@@ -73,22 +73,25 @@
       <div class="row">
         <div class="tab-content col-xs-12">
           <div class="tab-pane active" id="writing">
-
-            <!-- possible thumbnail + content template  -->
-            <!-- it's ok if img pulls right on large screen, but want it centered in small screen -->
-            <!-- <a class="col-xs-12 col-md-2 col-md-offset-1" href="#">
-              <img class="img-responsive thumbnail" style="max-height: 100px; margin: auto" src="img/ex1.jpg"></img>
-            </a>
-            <div class="col-xs-12 col-md-7">
-              <p>
-              <strong>Name of Book or Article: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div> -->
-            <!-- end thumbnail + content template  -->
-
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1">
+                <p>
+                  This is a representative sample of my recent writing projects, ranging from work on others' blogs to my own blog to professional and educational materials. Click on the image next to each description to visit the associated webpage.
+                </p>
+              </div>
+            </div>
+            <div style="height: 50px"></div>
           </div>
 
           <div class="tab-pane" id="editing">
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1">
+                <p>
+                  This is a representative sample of my recent editing projects, ranging from academic developmental editing to copyediting and proofreading material for publishing companies. Click on the image next to each description to visit the associated webpage.
+                </p>
+              </div>
+            </div>
+            <div style="height: 50px"></div>
           </div>
 
           <div class="tab-pane" id="project-management">
@@ -111,12 +114,24 @@
     <% _.each(articles, function(article) { %>
 
       <div class="row article-stub">
-        <a class="col-xs-12 col-md-2 col-md-offset-1" href="<%= article.url %>">
+        <a class="col-xs-12 col-md-2 col-md-offset-1" href="<%= article.url %>" target="_blank">
           <img class="img-responsive thumbnail" style="max-height: 100px; margin: auto" src="img/<%= article.thumbnail_name %>"></img>
         </a>
         <div class="col-xs-12 col-md-7">
+          <!-- company name  -->
+          <h4><a href="<%= article.url %>" target="_blank"><%= article.company %></a></h4>
+          <!-- check for title and author and date and show if present -->
+          <% if (article.title) { %>
+            <p><strong><%= article.title %></strong></p>
+          <% } %>
+          <% if (article.author) { %>
+            <p>by <em><%= article.author %></em></p>
+          <% } %>
+          <% if (article.date) { %>
+            <p><strong>Dates:</strong> <%= article.date %></p>
+          <% } %>
+          <!-- the description, assumed to contain properly escaped html -->
           <p>
-          <strong><%= article.title %>: </strong>
           <%= article.description %>
           </p>
         </div>
@@ -151,6 +166,22 @@
         }
       })
     }
+
+    // function to process hash change events
+    // THIS DOESN'T WORK YET
+    process_hashchange = function() {
+      // get the strings following the hash
+      var hashtag = window.location.hash.split("#")[1] ? window.location.hash.split("#")[1].substr(1) : "writing";
+      var fname = "json/" + hashtag + ".json";
+      console.log(hashtag, fname);
+      get_json(fname, "#" + hashtag)    
+    }
+  
+    // run the hashchange function on page load
+    // window.onload = process_hashchange;
+
+    // listen to hash changes
+    window.addEventListener("hashchange", process_hashchange);
     get_json("json/writing.json", "#writing")
     get_json("json/editing.json", "#editing")
     get_json("json/project-management.json", "#project-management")

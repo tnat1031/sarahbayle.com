@@ -1,37 +1,42 @@
 [
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex6.jpg"
+	{	
+		"company": "Harvard University, Department of Economics",
+		"title": "<em>Essays in Applied Microeconomics of Development,<\/em> Doctoral Thesis",
+		"author": "Plamen Nicolov",
+		"description": "I did a close read and developmental edit of two chapters of Plamen's doctoral thesis: &quot;Does HIV Therapy Stimulate Risky Sexual Behavior? A Field Experiment in South Africa&quot; and &quot;One Step at a Time: Does Gradualism Foster Group Coordination?&quot;. Plamen received his degree in 2013.",
+		"url": "http://economics.harvard.edu/pages/graduate",
+		"thumbnail_name": "harvard-logo.gif"
 	},
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex2.jpg"
+	{	
+		"company": "Jones & Bartlett Learning",
+		"title": "<em>Emergency Management for Sport and Physical Activity<\/em>",
+		"author": "Casa and Stearns",
+		"description": "I copyedited the full manuscript of this first edition health textbook written by Douglas Casa and Rebecca Stearns.",
+		"url": "http://www.jblearning.com/catalog/9781284022162",
+		"thumbnail_name": "casa-stearns.jpg"
 	},
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex9.jpg"
+	{	
+		"company": "Jones & Bartlett Learning",
+		"title": "<em>Nurse Practitioner’s Business and Legal Guide, Fifth Edition<\/em> and <em>The Pearson Report<\/em>",
+		"author": "Caroline Buppert and Linda Pearson",
+		"description": "I copyedited the full manuscript for the fifth edition of Caroline Buppert's top seller in the professional nursing field. As part of the project, I also edited the renowned Pearson Report by Linda Pearson, which had previously been published by nursing organizations. This was the first time it went through the production process at a mainstream publisher.",
+		"url": "http://www.jblearning.com/catalog/9781284050912",
+		"thumbnail_name": "buppert.jpg"
 	},
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex1.jpg"
+	{	
+		"company": "Elsevier",
+		"title": "<em>Security Consulting<\/em>",
+		"author": "Charles Sennewald",
+		"description": "I proofread this 264-page first edition by Charles Sennewald. Sennewald is an independent security consultant with a conversational writing style, and his prose required careful attention during proofreading.",
+		"url": "https://www.elsevier.com/books/security-consulting/sennewald/978-0-12-398500-2",
+		"thumbnail_name": "security-consulting.gif"
 	},
-	{
-		"title": "Some title",
-		"author": "Author Name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		"url": "#",
-		"thumbnail_name": "ex9.jpg"
+	{	
+		"company": "Jones & Bartlett Learning",
+		"title": "<em>Frequently Prescribed Medications: Drugs You Need to Know<\/em>",
+		"author": "Michael Mancano and Jason Gallagher",
+		"description": "I proofread this 382-page second edition medical text, which required extreme attention to detail due to the nature of the content.",
+		"url": "http://www.jblearning.com/catalog/9781449698843",
+		"thumbnail_name": "mancano-gallagher.jpg"
 	}
 ]
