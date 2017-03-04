@@ -1,0 +1,44 @@
+[
+	{	
+		"company": "A Unique Approach to Introducing Consumer Telehealth Pays Real Dividends for Cone Health",
+		"description": "Case story promoting IT services. Written in collaboration with a consultant who led an exemplary IT client engagement. First long-form marketing case study completed at the firm. Created accompanying blog and social media posts to drive additional traffic.",
+		"url": "http://www.ecgmc.com/clients/case-studies/a-unique-approach-to-introducing-consumer-telehealth-pays-real-dividends-for-cone-health",
+		"thumbnail_name": "ecg-logo-large.svg"
+	},
+	{	
+		"company": "Three Memorable Moments in 2016",
+		"description": "SEO-optimized blog post asserting the firm’s unique point of view on the most critical healthcare developments of 2016. Repurposed existing content identified as high traffic through Google Analytics. 100+ pageviews out of the gate and counting.",
+		"url": "http://www.ecgmc.com/thought-leadership/blog/three-memorable-moments-in-2016-bundled-payments-macra-and-of-course-donald-trump"
+	},
+	{	
+		"company": "Needing More from Your NICU",
+		"description": "Long-form thought leadership written in collaborating with consultant SMEs. Advised on art and layout, working with graphic designer, in addition to copy. Created accompanying blog and social media posts to drive additional traffic.",
+		"url": "http://www.ecgmc.com/thought-leadership/articles/needing-more-from-your-nicu-improving-efficiency-care-and-cost"
+	},
+	{	
+		"company": "Telehealth Index: 2016 Employer Benchmark Survey",
+		"description": "Analyzed data from American Well’s broad survey of the employer sector and wrote lead gen marketing ebook reporting on results. Served as cornerstone of multichannel campaign including blogs, webinars, sponsored content, and social media posts.",
+		"url": "assets/Employer_eBook_FINAL_web.pdf",
+		"thumbnail_name": "logo_AW_223x33.png"
+	},
+	{	
+		"company": "AW9 Product Webpage",
+		"description": "Cornerstone of product marketing campaign for major software release. Wrote copy and collaborated with design to select images, structure layout, and build subpages. Used as basis for complementary suite of leave-behind brochures on new features.",
+		"url": "https://www.americanwell.com/telehealth-platform-mobile-web-kiosk/"
+	},
+	{	
+		"company": "What Can Digital Marketing Do for Your Telehealth Service?",
+		"description": "Banded together with client marketing to write a blog post to help solve the health system challenge of initial low utilization of telehealth services by patients. Teaches health systems basic, low-cost digital marketing strategies to improve patient engagement.",
+		"url": "https://www.americanwell.com/what-can-digital-marketing-do-for-your-telehealth-service/"
+	},
+	{	
+		"company": "Telemedicine Reimbursement: A Guide to Getting Paid",
+		"description": "Joined forces with internal SME to research and write a post answering the question of how doctors get reimbursed for seeing patients via telehealth. Remains most well-trafficked blog post on American Well B2B blog as measured by Google Analytics.",
+		"url": "https://www.americanwell.com/telemedicine-reimbursement/"
+	},
+	{	
+		"company": "Our Week at HIMSS",
+		"description": "Assembled a visual chronicle of the American Well team’s experience at HIMSS16. Updated blog post in real time throughout the conference with new images and captions to entice attendees to visit the company booth.",
+		"url": "https://www.americanwell.com/our-week-at-himss16/"
+	}
+]
